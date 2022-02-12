@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - Videos
 public struct Videos: Codable {
-    let totalResults, page, perPage: Int
-    let videos: [Video]
-    let prevPage, nextPage: String?
+    public let totalResults, page, perPage: Int
+    public let videos: [Video]
+    public let prevPage, nextPage: String?
 
     enum CodingKeys: String, CodingKey {
         case totalResults = "total_results"

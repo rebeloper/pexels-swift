@@ -9,10 +9,10 @@ import Foundation
 
 // MARK: - Collection
 public struct Collection: Codable {
-    let id, title: String
-    let collectionDescription: String?
-    let collectionPrivate: Bool
-    let mediaCount, photosCount, videosCount: Int
+    public let id, title: String
+    public let collectionDescription: String?
+    public let collectionPrivate: Bool
+    public let mediaCount, photosCount, videosCount: Int
 
     enum CodingKeys: String, CodingKey {
         case id, title

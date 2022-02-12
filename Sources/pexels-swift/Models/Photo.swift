@@ -9,15 +9,15 @@ import Foundation
 
 // MARK: - Photo
 public struct Photo: Codable {
-    let id, width, height: Int
-    let url: String
-    let photographer: String
-    let photographerURL: String
-    let photographerID: Int
-    let avgColor: String
-    let src: Src
-    let liked: Bool
-    let alt: String
+    public let id, width, height: Int
+    public let url: String
+    public let photographer: String
+    public let photographerURL: String
+    public let photographerID: Int
+    public let avgColor: String
+    public let src: Src
+    public let liked: Bool
+    public let alt: String
 
     enum CodingKeys: String, CodingKey {
         case id, width, height, url, photographer
@@ -30,8 +30,8 @@ public struct Photo: Codable {
 
 // MARK: - Src
 public struct Src: Codable {
-    let original, large2X, large, medium: String
-    let small, portrait, landscape, tiny: String
+    public let original, large2X, large, medium: String
+    public let small, portrait, landscape, tiny: String
 
     enum CodingKeys: String, CodingKey {
         case original

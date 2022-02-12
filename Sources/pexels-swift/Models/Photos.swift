@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - Photos
 public struct Photos: Codable {
-    let totalResults, page, perPage: Int
-    let photos: [Photo]
-    let prevPage, nextPage: String?
+    public let totalResults, page, perPage: Int
+    public let photos: [Photo]
+    public let prevPage, nextPage: String?
 
     enum CodingKeys: String, CodingKey {
         case totalResults = "total_results"

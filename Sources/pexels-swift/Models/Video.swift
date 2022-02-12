@@ -9,13 +9,13 @@ import Foundation
 
 // MARK: - Video
 public struct Video: Codable {
-    let id, width, height: Int
-    let url: String
-    let image: String
-    let duration: Int
-    let user: User
-    let videoFiles: [VideoFile]
-    let videoPictures: [VideoPicture]
+    public let id, width, height: Int
+    public let url: String
+    public let image: String
+    public let duration: Int
+    public let user: User
+    public let videoFiles: [VideoFile]
+    public let videoPictures: [VideoPicture]
 
     enum CodingKeys: String, CodingKey {
         case id, width, height, url, image, duration, user
@@ -26,17 +26,17 @@ public struct Video: Codable {
 
 // MARK: - User
 public struct User: Codable {
-    let id: Int
-    let name: String
-    let url: String
+    public let id: Int
+    public let name: String
+    public let url: String
 }
 
 // MARK: - VideoFile
 public struct VideoFile: Codable {
-    let id: Int
-    let quality, fileType: String
-    let width, height: Int?
-    let link: String
+    public let id: Int
+    public let quality, fileType: String
+    public let width, height: Int?
+    public let link: String
 
     enum CodingKeys: String, CodingKey {
         case id, quality
@@ -47,8 +47,8 @@ public struct VideoFile: Codable {
 
 // MARK: - VideoPicture
 public struct VideoPicture: Codable {
-    let id: Int
-    let picture: String
-    let nr: Int
+    public let id: Int
+    public let picture: String
+    public let nr: Int
 }
 

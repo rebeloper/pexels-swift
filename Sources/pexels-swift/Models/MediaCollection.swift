@@ -9,10 +9,10 @@ import Foundation
 
 // MARK: - MediaCollection
 public struct MediaCollection: Codable {
-    let id: String
-    let media: [Media]
-    let page, perPage, totalResults: Int
-    let nextPage, prevPage: String?
+    public let id: String
+    public let media: [Media]
+    public let page, perPage, totalResults: Int
+    public let nextPage, prevPage: String?
 
     enum CodingKeys: String, CodingKey {
         case id, media, page
@@ -25,22 +25,22 @@ public struct MediaCollection: Codable {
 
 // MARK: - Media
 public struct Media: Codable {
-    let type: String
-    let id, width, height: Int
-    let url: String
-    let photographer: String?
-    let photographerURL: String?
-    let photographerID: Int?
-    let avgColor: String?
-    let src: Src?
-    let liked: Bool?
-    let duration: Int?
-    let fullRes: String?
-    let tags: [String]?
-    let image: String?
-    let user: User?
-    let videoFiles: [VideoFile]?
-    let videoPictures: [VideoPicture]?
+    public let type: String
+    public let id, width, height: Int
+    public let url: String
+    public let photographer: String?
+    public let photographerURL: String?
+    public let photographerID: Int?
+    public let avgColor: String?
+    public let src: Src?
+    public let liked: Bool?
+    public let duration: Int?
+    public let fullRes: String?
+    public let tags: [String]?
+    public let image: String?
+    public let user: User?
+    public let videoFiles: [VideoFile]?
+    public let videoPictures: [VideoPicture]?
 
     enum CodingKeys: String, CodingKey {
         case type, id, width, height, url, photographer

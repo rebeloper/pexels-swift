@@ -9,9 +9,9 @@ import Foundation
 
 // MARK: - Collections
 public struct Collections: Codable {
-    let collections: [Collection]
-    let page, perPage, totalResults: Int
-    let prevPage, nextPage: String?
+    public let collections: [Collection]
+    public let page, perPage, totalResults: Int
+    public let prevPage, nextPage: String?
 
     enum CodingKeys: String, CodingKey {
         case collections, page
