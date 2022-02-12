@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - MediaCollection
-struct MediaCollection: Codable {
+public struct MediaCollection: Codable {
     let id: String
     let media: [Media]
     let page, perPage, totalResults: Int
@@ -24,7 +24,7 @@ struct MediaCollection: Codable {
 }
 
 // MARK: - Media
-struct Media: Codable {
+public struct Media: Codable {
     let type: String
     let id, width, height: Int
     let url: String

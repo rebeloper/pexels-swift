@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Collections
-struct Collections: Codable {
+public struct Collections: Codable {
     let collections: [Collection]
     let page, perPage, totalResults: Int
     let prevPage, nextPage: String?
