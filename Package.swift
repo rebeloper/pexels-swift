@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "pexels-swift",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -17,16 +17,13 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "Networking", url: "https://github.com/freshOS/Networking.git", .upToNextMajor(from: "0.3.5"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "pexels-swift",
-            dependencies: [
-                .product(name: "Networking", package: "Networking")
-            ]),
+            dependencies: []),
         .testTarget(
             name: "pexels-swiftTests",
             dependencies: ["pexels-swift"]),
