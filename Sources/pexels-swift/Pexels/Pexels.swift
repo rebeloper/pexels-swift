@@ -9,6 +9,9 @@ import Foundation
 
 public struct Pexels<T: Codable> {
     
+    /// Gets an object from the Pexels API ``https://www.pexels.com/api``
+    /// - Parameter route: Route of the call
+    /// - Returns: a Codable object
     public static func get(_ route: PexelsURLRoute) async throws -> T {
         let urlRequest = try PexelsUrlRequest.create(for: route)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
@@ -34,6 +37,4 @@ public struct Pexels<T: Codable> {
         }
     }
     
-    
 }
-
